@@ -1,132 +1,324 @@
 <!doctype html>
-<html lang="id" data-theme="mytheme">
+<html lang="id" data-theme="caramellatte">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
-    
-    <!-- TailwindCSS via CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>CV - Dimas Dwi Ariyanto</title>
 </head>
-<body class="font-mono bg-base-100 p-4 md:p-8">
+<body class="bg-base-200 min-h-screen font-mono">
 
-<main class="max-w-3xl mx-auto p-4 md:p-10 bg-white rounded-lg shadow-md">
-
-   <!-- Header -->
-   <header class="text-center mb-6 md:mb-10">
-       <h1 class="text-3xl sm:text-4xl font-extrabold mb-2">Dimas Dwi Ariyanto</h1>
-       
-       <!-- Kontak -->
-       <ul class="flex flex-wrap justify-center gap-4 text-sm text-gray-500 mb-6">
-           <li>
-               <a href="mailto:dimasdwiariyanto24@gmail.com" class="underline hover:text-primary break-words">dimasdwiariyanto24@gmail.com</a>
-           </li>
-           <li>
-               <a href="https://github.com/pavelc4" target="_blank" rel="noopener" class="underline hover:text-primary">github.com/pavelc4</a>
-           </li>
-           <li>
-               <a href="https://t.me/Pavellc" target="_blank" rel="noopener" class="underline hover:text-primary">t.me/Pavellc</a>
-           </li>
-       </ul>
-   </header>
-    <!-- About Me -->
-    <section class="mb-8 md:mb-12 px-2 sm:px-0">
-        <h2 class="text-xl sm:text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Tentang Saya</h2>
-        <p class="text-gray-700 leading-relaxed text-sm sm:text-base">
-            Haii, aku Dimas Dwi Ariyanto, seorang mahasiswa Teknik Informatika di Universitas Widyatama, Bandung. Aku sangat tertarik pada backend development dan pengembangan API. Selain itu, aku juga suka mengikuti perkembangan Android, baik soal sistem maupun ekosistemnya.
-            <br /><br />
-            Aku aktif memantau update Linux kernel, yang jadi inti banyak sistem operasi termasuk Android. Aku juga selalu tertarik mencoba dan belajar tentang teknologi AI terbaru, mulai dari model-model yang baru rilis sampai berbagai inovasi yang terus berkembang.
-            <br /><br />
-            Minatku di backend, Android, Linux kernel, dan AI bikin aku semangat belajar hal baru, bereksperimen, dan terus berkembang mengikuti dunia teknologi.
-        </p>
-    </section>
-
-    <!-- Education -->
-    <section class="mb-8 md:mb-12 px-2 sm:px-0">
-      <h2 class="text-xl sm:text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Pendidikan</h2>
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold">Universitas Widyatama</h3>
-        <p class="text-gray-600 mb-1">Teknik Informatika</p>
-        <p class="text-sm text-gray-500">2024 - Sekarang</p>
-      </div>
-      <div class="mb-6">
-        <h3 class="text-lg font-semibold">SMK Prakarya Internasional</h3>
-        <p class="text-gray-600 mb-1">Rekayasa Perangkat Lunak</p>
-        <p class="text-sm text-gray-500">2021 - 2024</p>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section class="mb-8 md:mb-12 px-2 sm:px-0">
-        <h2 class="text-xl sm:text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Proyek</h2>
-        <div class="space-y-6 text-sm sm:text-base">
-            <div>
-                <h3 class="text-lg font-semibold">Telegram Bot</h3>
-                <p class="text-gray-700 leading-snug">
-                    Bot telegram Sederhana yang di buat mengunakan Bahasa pemerograman go<br>
-                    bot ini berguna untuk mengunduh konten dari berbagai sosial media, cukup berodal kan link public post konten akan di download  secara otomatis 
-                </p>
+<div class="container mx-auto p-2 sm:p-4 max-w-6xl">
+    <div class="card bg-base-100 shadow-2xl">
+        <div class="card-body p-0">
+            <div class="hero bg-gradient-to-r from-primary to-secondary text-primary-content rounded-t-2xl">
+                <div class="hero-content w-full p-4 sm:p-8">
+                    <div class="flex flex-col sm:flex-row sm:justify-between items-center sm:items-start w-full gap-4">
+                        <div class="text-center sm:text-left sm:max-w-md">
+                            <h1 class="text-2xl sm:text-4xl font-bold mb-2">Dimas Dwi Ariyanto</h1>
+                            <p class="text-lg sm:text-xl opacity-90 mb-4">Backend Developer & Software Engineer</p>
+                            <div class="flex flex-col sm:flex-row flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm opacity-80">
+                                <a href="mailto:dimasdwiariyanto24@gmail.com" class="link link-hover break-all">
+                                    📧 dimasdwiariyanto24@gmail.com
+                                </a>
+                                <a href="https://github.com/pavelc4" target="_blank" class="link link-hover">
+                                    🔗 github.com/pavelc4
+                                </a>
+                                <a href="https://t.me/Pavellc" target="_blank" class="link link-hover">
+                                    💬 t.me/Pavellc
+                                </a>
+                            </div>
+                        </div>
+                        <div class="avatar flex-shrink-0">
+                            <div class="w-24 sm:w-32 rounded-2xl ring ring-base-100 ring-offset-base-100 ring-offset-2">
+                                <img src="https://github.com/pavelc4.png" alt="Profile" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <h3 class="text-lg font-semibold">YukPerpus</h3>
-                <p class="text-gray-700 leading-snug">
-                    Sistem manajemen perpustakaan yang dibangun menggunakan Laravel 12.
-                </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-8 p-4 sm:p-8">
+                <div class="lg:col-span-2 space-y-6 sm:space-y-8">
+                    <section>
+                        <h2 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-base-content">About Me</h2>
+                        <div class="prose prose-sm sm:prose max-w-none">
+                            <p class="text-sm sm:text-base leading-relaxed">
+                                Hi, I'm Dimas Dwi Ariyanto, an Informatics Engineering student at Universitas Widyatama, Bandung. I'm passionate about backend development and API development. I also love following Android developments, both system and ecosystem-wise.
+                            </p>
+                            <p class="text-sm sm:text-base leading-relaxed">
+                                I actively monitor Linux kernel updates, which are the core of many operating systems including Android. I'm always interested in trying and learning about the latest AI technologies, from newly released models to various innovations that continue to develop.
+                            </p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-base-content">Projects</h2>
+                        <div class="space-y-4 sm:space-y-6">
+
+                            <!-- Telegram Bot -->
+                            <div class="card bg-gradient-to-r from-info to-info-content shadow-lg">
+                                <div class="card-body p-4 sm:p-6">
+                                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 sm:mb-2">
+                                        <div class="mb-2 sm:mb-0">
+                                            <h3 class="card-title text-base sm:text-xl text-white">Telegram Bot</h3>
+                                            <p class="text-sm sm:text-base text-white/80">Go Development</p>
+                                        </div>
+                                        <div class="badge bg-white/20 text-white border-white/30 badge-sm">2024 - Current</div>
+                                    </div>
+                                    <p class="text-white/90 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
+                                        A simple Telegram bot built with Go programming language. This bot is useful for downloading content from various social media platforms, just provide a public post link and content will be downloaded automatically.
+                                    </p>
+                                    <div class="flex flex-wrap gap-1 sm:gap-2">
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">Go</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">Telegram API</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">Web Scraping</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- YukPerpus -->
+                            <div class="card bg-gradient-to-r from-warning to-warning-content shadow-lg">
+                                <div class="card-body p-4 sm:p-6">
+                                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 sm:mb-2">
+                                        <div class="mb-2 sm:mb-0">
+                                            <h3 class="card-title text-base sm:text-xl text-white">YukPerpus</h3>
+                                            <p class="text-sm sm:text-base text-white/80">Library Management System</p>
+                                        </div>
+                                        <div class="badge bg-white/20 text-white border-white/30 badge-sm">2024</div>
+                                    </div>
+                                    <p class="text-white/90 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
+                                        A library management system built using Laravel 12 with complete features for managing books, members, and loan transactions.
+                                    </p>
+                                    <div class="flex flex-wrap gap-1 sm:gap-2">
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">Laravel</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">PHP</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">MySQL</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- WaroengMadura -->
+                            <div class="card bg-gradient-to-r from-success to-success-content shadow-lg">
+                                <div class="card-body p-4 sm:p-6">
+                                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-3 sm:mb-2">
+                                        <div class="mb-2 sm:mb-0">
+                                            <h3 class="card-title text-base sm:text-xl text-white">WaroengMadura</h3>
+                                            <p class="text-sm sm:text-base text-white/80">Point of Sales System</p>
+                                        </div>
+                                        <div class="badge bg-white/20 text-white border-white/30 badge-sm">2024</div>
+                                    </div>
+                                    <p class="text-white/90 text-xs sm:text-sm mb-3 sm:mb-4 leading-relaxed">
+                                        A point of sales system built using Laravel 12 to manage sales transactions, inventory, and business reports.
+                                    </p>
+                                    <div class="flex flex-wrap gap-1 sm:gap-2">
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">Laravel</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">PHP</div>
+                                        <div class="badge bg-white/20 text-white border-white/30 text-xs">JavaScript</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-6 sm:space-y-8">
+                    <section>
+                        <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-base-content">Education</h2>
+
+                        <div class="card bg-base-200 shadow mb-3 sm:mb-4">
+                            <div class="card-body p-3 sm:p-4">
+                                <div class="text-xs text-base-content/60 mb-1">2024 - Present</div>
+                                <h3 class="font-semibold text-sm sm:text-base text-base-content">Informatics Engineering</h3>
+                                <p class="text-base-content/80 text-xs sm:text-sm">Universitas Widyatama (Bandung)</p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-base-200 shadow">
+                            <div class="card-body p-3 sm:p-4">
+                                <div class="text-xs text-base-content/60 mb-1">2021 - 2024</div>
+                                <h3 class="font-semibold text-sm sm:text-base text-base-content">Software Engineering</h3>
+                                <p class="text-base-content/80 text-xs sm:text-sm">SMK Prakarya Internasional</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-base-content">Tech Stack</h2>
+
+                        <div class="space-y-3 sm:space-y-4">
+                            <div>
+                                <h3 class="font-semibold text-base-content/80 mb-2 sm:mb-3 text-xs sm:text-sm">Backend</h3>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <div class="badge badge-outline text-xs">Go</div>
+                                    <div class="badge badge-outline text-xs">PHP</div>
+                                    <div class="badge badge-outline text-xs">Laravel</div>
+                                    <div class="badge badge-outline text-xs">API Development</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-base-content/80 mb-2 sm:mb-3 text-xs sm:text-sm">Frontend</h3>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <div class="badge badge-outline text-xs">JavaScript</div>
+                                    <div class="badge badge-outline text-xs">HTML</div>
+                                    <div class="badge badge-outline text-xs">CSS</div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="font-semibold text-base-content/80 mb-2 sm:mb-3 text-xs sm:text-sm">Tools & Others</h3>
+                                <div class="flex flex-wrap gap-1 sm:gap-2">
+                                    <div class="badge badge-outline text-xs">Docker</div>
+                                    <div class="badge badge-outline text-xs">Git</div>
+                                    <div class="badge badge-outline text-xs">GitHub</div>
+                                    <div class="badge badge-outline text-xs">Linux</div>
+                                    <div class="badge badge-outline text-xs">Shell Script</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-base-content">Technical Skills</h2>
+                        <div class="card bg-base-200 shadow">
+                            <div class="card-body p-3 sm:p-4">
+                                <ul class="text-xs sm:text-sm text-base-content space-y-1 sm:space-y-2">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Backend API Development</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Android Kernel Optimization</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Bot Development (Telegram)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Web Application Development</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Database Design & Management</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-primary">•</span>
+                                        <span>Self-hosted Solutions Deployment</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-base-content">Certifications</h2>
+                        <!-- Mobile version -->
+                        <div class="block sm:hidden space-y-3">
+                            <div class="card bg-base-200 shadow">
+                                <div class="card-body p-3">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <div class="font-semibold text-xs">Backend Developer Pemula</div>
+                                        <div class="badge badge-primary badge-sm">2025</div>
+                                    </div>
+                                    <div class="text-base-content/60 text-xs">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-200 shadow">
+                                <div class="card-body p-3">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <div class="font-semibold text-xs">Dasar Pemrograman JavaScript</div>
+                                        <div class="badge badge-secondary badge-sm">2024</div>
+                                    </div>
+                                    <div class="text-base-content/60 text-xs">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-200 shadow">
+                                <div class="card-body p-3">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <div class="font-semibold text-xs">Dasar Pemrograman Web</div>
+                                        <div class="badge badge-accent badge-sm">2024</div>
+                                    </div>
+                                    <div class="text-base-content/60 text-xs">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="card bg-base-200 shadow">
+                                <div class="card-body p-3">
+                                    <div class="flex justify-between items-start mb-1">
+                                        <div class="font-semibold text-xs">Frontend Development</div>
+                                        <div class="badge badge-info badge-sm">2024</div>
+                                    </div>
+                                    <div class="text-base-content/60 text-xs">Dicoding</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Desktop Timeline -->
+                        <div class="hidden sm:block timeline timeline-vertical timeline-compact">
+                            <div class="timeline-item">
+                                <div class="timeline-start timeline-box bg-primary text-primary-content text-xs p-2">2025</div>
+                                <div class="timeline-middle">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                </div>
+                                <div class="timeline-end timeline-box text-xs">
+                                    <div class="font-semibold">Backend Developer Pemula</div>
+                                    <div class="text-base-content/60">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-start timeline-box bg-secondary text-secondary-content text-xs p-2">2024</div>
+                                <div class="timeline-middle">
+                                    <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                </div>
+                                <div class="timeline-end timeline-box text-xs">
+                                    <div class="font-semibold">Dasar Pemrograman JavaScript</div>
+                                    <div class="text-base-content/60">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-start timeline-box bg-accent text-accent-content text-xs p-2">2024</div>
+                                <div class="timeline-middle">
+                                    <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                </div>
+                                <div class="timeline-end timeline-box text-xs">
+                                    <div class="font-semibold">Dasar Pemrograman Web</div>
+                                    <div class="text-base-content/60">Dicoding</div>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-start timeline-box bg-info text-info-content text-xs p-2">2024</div>
+                                <div class="timeline-middle">
+                                    <div class="w-2 h-2 bg-info rounded-full"></div>
+                                </div>
+                                <div class="timeline-end timeline-box text-xs">
+                                    <div class="font-semibold">Frontend Development</div>
+                                    <div class="text-base-content/60">Dicoding</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
 
-            <div>
-                <h3 class="text-lg font-semibold">WaroengMadura</h3>
-                <p class="text-gray-700 leading-snug">
-                    Sistem point of sales yang dibangun menggunakan Laravel 12.
-                </p>
+            <!-- Bottom Section -->
+            <div class="bg-base-200 p-4 sm:p-8 rounded-b-2xl">
+                <h2 class="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-base-content">Interests & Hobbies</h2>
+                <div class="flex flex-wrap gap-2 sm:gap-3">
+                    <div class="badge badge-ghost text-xs sm:text-sm">🤖 Android Enthusiast</div>
+                    <div class="badge badge-ghost text-xs sm:text-sm">🐧 Linux Enthusiast</div>
+                    <div class="badge badge-ghost text-xs sm:text-sm">🤖 AI Technology</div>
+                    <div class="badge badge-ghost text-xs sm:text-sm">🚀 Open Source</div>
+                </div>
             </div>
         </div>
-    </section>
-
-<!-- Skills (Updated Colors) -->
-<section class="mb-8 md:mb-12 px-2 sm:px-0">
-  <h2 class="text-xl sm:text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Keahlian</h2>
-  <div class="flex flex-wrap gap-3 text-sm sm:text-base">
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Go</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">JavaScript</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">PHP</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Docker</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Git</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">GitHub</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Shell Script</span>
-    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Linux</span>
-  </div>
-</section>
-
-
-    <!-- Certifications -->
-    <section class="px-2 sm:px-0">
-      <h2 class="text-xl sm:text-2xl font-bold border-b border-gray-300 pb-2 mb-4">Sertifikasi</h2>
-      <ul class="list-disc list-inside text-gray-700 space-y-1 text-sm sm:text-base">
-        <li>
-          Sertifikat Backend Developer Pemula – Dicoding (2025)
-          <a href="https://drive.google.com/file/d/19GXsQJsxFOAarCp6wKadCnNLkJ2JN1nR/view?usp=sharing" target="_blank" class="underline text-primary ml-2">View</a>
-        </li>
-        <li>
-          Belajar Dasar Pemrograman JavaScript – Dicoding (2024)
-          <a href="https://drive.google.com/file/d/1660_RWAQJ0QxqBn4Jhgpcyn-mMo0d9u6/view?usp=sharing" target="_blank" class="underline text-primary ml-2">View</a>
-        </li>
-        <li>
-          Belajar Dasar Pemrograman Web – Dicoding (2024)
-          <a href="https://drive.google.com/file/d/1Uprnv2JtILiFxPhxDSVYJrVIjhkGlfvO/view?usp=sharing" target="_blank" class="underline text-primary ml-2">View</a>
-        </li>
-        <li>
-          Front end Development – Dicoding (2024)
-          <a href="https://drive.google.com/file/d/1oNz2BQpYeTnv-9yV5ZbwiYHlk3ZfFOcA/view?usp=sharing" target="_blank" class="underline text-primary ml-2">View</a>
-        </li>
-      </ul>
-    </section>
-</main>
+    </div>
+</div>
 
 </body>
 </html>
