@@ -1,6 +1,6 @@
-# Tugas CV / Portofolio Web
+# Tugas CV 
 
-This is a personal CV/Portofolio website project.
+This is a personal CV website project.
 
 ## Setup and Installation
 
